@@ -71,6 +71,7 @@
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template: 1fr 1fr/ 2fr 1fr;
+    box-shadow: -2px -2px 5px #94A3B8;
 }
 
 .search-bar {
@@ -173,13 +174,36 @@ button {
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     justify-items: center;
     align-items: center;
+    gap: 15px;
 }
 
 .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
+    width: 55vh;
+    background-color: white;
+    padding: 15px;
+    border-left: 8px solid #FB923C;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #94A3B8;
 }
 
 .card p {
     font-size: var(--small-font-size);
+}
+
+.card h4 {
+    font-size: .9rem;
+}
+
+.card .icons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
 }
 
 .announcements {
